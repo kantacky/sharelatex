@@ -1,4 +1,4 @@
-FROM sharelatex/sharelatex:cfdeecb4e55a7ae76f0244b86d1b896580bc7137b82733b886a97575fba19d43
+FROM sharelatex/sharelatex@sha256:cfdeecb4e55a7ae76f0244b86d1b896580bc7137b82733b886a97575fba19d43
 RUN tlmgr update --self
 RUN tlmgr install scheme-full
 RUN ln -s /usr/local/texlive/2025/bin/x86_64-linux/platex  /usr/local/bin/platex
